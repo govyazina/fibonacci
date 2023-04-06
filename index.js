@@ -7,7 +7,7 @@ function getFibonacciNumberByIndexIter(index) {
         arrFibonacci.push(nextNumber)
     }
 
-    return arrFibonacci.pop()
+    return arrFibonacci[index - 1]
 }
 
 
