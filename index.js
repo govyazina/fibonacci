@@ -15,9 +15,15 @@ function getFibonacciNumberByIndexIter(index) {
 // Рекурсивное вычисление n-го числа Фибоначчи
 
 function getFibonacciNumberByIndexRec(index) {
-    let number
-
-    return number
+    if (index === 1) {
+        return 0
+    }
+    else if (index === 2) {
+        return 1
+    }
+    return getFibonacciNumberByIndexRec(index - 1) + getFibonacciNumberByIndexRec(index - 2)
 }
+
+getFibonacciNumberByIndexRec(4)
 
 module.exports = {getFibonacciNumberByIndexIter, getFibonacciNumberByIndexRec}
