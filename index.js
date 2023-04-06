@@ -1,9 +1,13 @@
 // Итерационный подсчет n-го числа Фибоначчи
 
 function getFibonacciNumberByIndexIter(index) {
-    let number
+    const arrFibonacci = [0, 1]
+    for (let i = 0; i < index - 2; i++) {
+        let nextNumber = arrFibonacci[i] + arrFibonacci[i + 1]
+        arrFibonacci.push(nextNumber)
+    }
 
-    return number
+    return arrFibonacci.pop()
 }
 
 
